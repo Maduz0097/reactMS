@@ -21,6 +21,7 @@ function NewsEvent() {
 
     return (
         <div>
+            <h2>Remote Service</h2>
             <p>
                 Title  :   {data?.newsFeed.title}
             </p>

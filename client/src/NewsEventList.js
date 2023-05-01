@@ -21,6 +21,7 @@ useEffect(() => {
 
     return (
         <div>
+            <h2>Host Data Preview</h2>
             <p>
             Title  :   {data?.newsFeed.title}
             </p>

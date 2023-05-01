@@ -5,6 +5,7 @@ import NewsEvent from "./NewsEvent";
 function App() {
   return (
     <div className="App">
+
      <NewsEvent/>
     </div>
   );
