@@ -19,6 +19,7 @@ function NewsEventForm() {
         e.preventDefault();
         try {
             await createNewsEvent({ variables: { title, description } });
+            console.log(1,performance.now())
             setTitle('');
             setDescription('');
         } catch (error) {

@@ -7,7 +7,7 @@ const RemoteList = React.lazy(() => import("Remote/NewsEvent"));
 
 function App() {
     useEffect(()=>{
-        const webSocket = new WebSocket('ws://localhost:4000/graphql');
+        const webSocket = new WebSocket('ws://localhost:4002/graphql');
 
         webSocket.onmessage = function (e) {
             console.log(e);
@@ -31,7 +31,7 @@ function App() {
         <div className="App">
 
             <NewsEventForm />
-            <NewsEventList />
+            {/*<NewsEventList />*/}
             <ErrorBoundary>
                 <Suspense fallback={<div>Loading...</div>}>
                     <RemoteList/>

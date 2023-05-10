@@ -14,7 +14,9 @@ function NewsEvent() {
     const { data, loading, error } = useSubscription(NEWS_EVENT_ADDED);
     useEffect(() => {
         console.log(data?.newsFeed)
-
+if (data?.newsFeed){
+    console.log(2,performance.now())
+}
     },[data])
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;

@@ -103,8 +103,8 @@ import bodyParser = require('body-parser');
     app.use('/graphql', cors<cors.CorsRequest>(), bodyParser.json(), expressMiddleware(server));
 
     // http server start
-    httpServer.listen(4000, () => {
-        console.log("Server running on http://localhost:" + "4000" + "/graphql");
+    httpServer.listen(4002, () => {
+        console.log("Server running on http://localhost:" + "4002" + "/graphql");
     });
 
 })();
